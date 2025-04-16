@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | Sticky Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="notes.css">
+    <script src="notes.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="app-container">
+        <h1>My Notes</h1>
+        
+        <div class="search-filter">
+            <input type="text" id="search-notes" placeholder="Search notes...">
+            <div class="filter-options">
+                <select id="sort-by">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
+                <div class="color-filters">
+                    <span>Filter by color: </span>
+                    <div class="color-option all active" data-color="all">All</div>
+                    <div class="color-option yellow" data-color="yellow"></div>
+                    <div class="color-option green" data-color="green"></div>
+                    <div class="color-option blue" data-color="blue"></div>
+                    <div class="color-option pink" data-color="pink"></div>
+                    <div class="color-option purple" data-color="purple"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notes-controls">
+            <button id="add-note">Add New Note</button>
+            <button id="clear-all">Clear All</button>
+        </div>
+        
+        <div id="notes-container" class="notes-container">
+            <!-- Notes will be added here dynamically -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Sticky Notes App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

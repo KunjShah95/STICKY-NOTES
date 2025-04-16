@@ -1,0 +1,5 @@
+.deleting {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}

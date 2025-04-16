@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="A simple sticky notes application to manage your tasks and ideas.">
+    <meta name="keywords" content="notes, tasks, productivity, application">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="app-container">
+        <h1>Sticky Notes</h1>
+        <div class="notes-controls">
+            <button id="add-note">Add New Note</button>
+            <button id="clear-all">Clear All</button>
+        </div>
+        <div id="notes-container" class="notes-container">
+            <!-- Notes will be added here dynamically -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Sticky Notes App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
